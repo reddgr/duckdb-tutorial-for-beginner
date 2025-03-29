@@ -25,6 +25,8 @@ FROM hacker_news_sample;
 ATTACH 'my_hacker_news_stats.ddb';
 USE my_hacker_news_stats;
 
+
+
 -- Create a larger table (10GB) in DuckDB
 CREATE TABLE hacker_news_full AS SELECT * FROM 's3://us-prd-motherduck-open-datasets/hacker_news/parquet/hacker_news_2016_2025.zstd.parquet';
 
