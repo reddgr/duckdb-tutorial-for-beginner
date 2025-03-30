@@ -2,6 +2,8 @@
 -- winget install DuckDB.cli
 -- curl https://install.duckdb.org | sh
 
+
+-- Connect to DuckDB file
 ATTACH 'thematic_screener.db';
 
 USE thematic_screener;
@@ -11,6 +13,8 @@ SHOW TABLES;
 SELECT * FROM tickers;
 
 SELECT * FROM close_prices;
+
+SELECT * FROM maestro;
 
 SELECT date, AAPL FROM close_prices;
 
