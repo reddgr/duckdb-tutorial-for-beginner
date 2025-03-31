@@ -16,6 +16,10 @@ SELECT * FROM close_prices;
 
 SELECT * FROM maestro;
 
+SELECT * FROM dividends;
+
+SELECT * FROM splits WHERE ticker = 'NVDA';
+
 SELECT date, AAPL FROM close_prices;
 
 SELECT date, AMZN FROM close_prices
